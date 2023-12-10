@@ -1,4 +1,4 @@
-author: 2044-space-elevator
+author: 2044-space-elevator,Eason1145141919810
 
 ## 求和符号 ($\sum$)
 
@@ -75,3 +75,20 @@ f(a)\times f(a+1)\times f(a+2)\times \ldots \times f(b-1)\times f(b)
 $$
 
 其中在 $a=1$，其等价于 $b!$。
+
+## 求和符号 / 连乘符号的嵌套
+
+求和符号与连乘符号是可以嵌套的。
+
+例如：
+
+$$
+\sum_{i=a}^b \sum_{j=c}^d f(i,j)
+$$
+
+就是一种合法的形式。如果你无法理解，可以参考以下伪代码：
+
+???+ note "双重嵌套求和符号的伪代码"
+    for i 从 a 到 b
+        for j 从 c 到 d
+	    累加 f(i,j)
